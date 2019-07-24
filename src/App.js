@@ -18,10 +18,11 @@ function App() {
   return (
     <div className="App">
     <Nav />
-      <Switch >
-        <Route path ="/professional" component ={Professional} />
-        <Route path ="/personal" component ={Personal} />
-    </Switch>
+      <Switch  >
+         <Route  path ="/professional" component ={Professional} />
+         <Route  path ="/personal" component ={Personal} />
+      </Switch>
+   
     </div>
   );
 }

@@ -1,5 +1,5 @@
 import React from "react";
-
+import {Link} from "react-router-dom";
 
 
 //images
@@ -98,6 +98,7 @@ function Professional () {
                 <p>Seth Nadu Portfolio</p>
                 </div>
             </div>
+            <Link style ={{textDecoration: "none", color:"black", fontWeight: "bold"}} to="/" ><p>Close</p></Link>
 
 
 

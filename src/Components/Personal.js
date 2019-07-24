@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom"
 
 //images
 import espnfantasyLogo from "../Assets/Personal-images/espnfantasy.png";
@@ -14,6 +15,7 @@ function Personal () {
     return (
         <div className = "Tab right">
         <h2>Personal</h2>
+        
         <hr></hr>
         <div className = "proSection">
             <img className = "logo" src = {espnfantasyLogo} alt = "ESPN Logo" />
@@ -70,6 +72,7 @@ function Personal () {
             <p>Restoration and Masonry</p>
             </div>
         </div>
+        <Link style ={{textDecoration: "none", color:"black", fontWeight: "bold"}} to="/" ><p>Close</p></Link>
 
 
 

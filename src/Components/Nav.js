@@ -1,13 +1,13 @@
 import React from "react";
-import {NavLink} from "react-router-dom";
+import {NavLink, Link} from "react-router-dom";
 
 function Nav () {
     return (
         <div className ="navBar">
             <div className ="navHeadings">
-                <NavLink to="/professional" activeClassName="active" className ="decoration"><p>Professional</p></NavLink>
-                <NavLink exact to="/"><h1 className ="decoration">Seth's HomePage</h1></NavLink>
-                <NavLink to="/personal" activeClassName ="active"><p>Personal</p></NavLink>
+                <NavLink style={{textDecoration: 'none'}} to="/professional" activeClassName="active" ><p>Professional</p></NavLink>
+                <Link style={{textDecoration: 'none'}} to="/"><h1 >Seth's HomePage</h1></Link>
+                <NavLink style={{textDecoration: 'none'}} to="/personal" activeClassName ="active"><p>Personal</p></NavLink>
             </div>
         </div>
     )
