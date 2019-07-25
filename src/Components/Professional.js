@@ -16,7 +16,7 @@ import portfolioLogo from "../Assets/School-images/portfolio.png";
 
 function Professional () {
         return (
-            <div className = "Tab">
+            <div className = "Tab left">
                 <h2>Professional</h2>
                 <hr></hr>
             <div className = "proSection">

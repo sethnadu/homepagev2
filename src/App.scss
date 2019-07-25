@@ -46,6 +46,7 @@
     }
 
     p {
+      padding:5px 10px;
       text-decoration: none;
       font-weight: bolder;
       cursor: pointer;
@@ -62,10 +63,9 @@
   width: 300px;
   padding: 10px;
   background-color: lightgray;
-  border-radius: 10px;
   box-shadow: 5px 5px 10px gray;
-  z-index: 1;
-  margin: 0 10px;
+  z-index: 0;
+ 
   
 
   
@@ -116,25 +116,103 @@
 }
 
 .right {
-  display: flex;
-  flex-direction: column;
-  margin: auto 10px auto auto;
-  align-content: flex-end;
+  display: inline-block;
+  position: absolute;
+  right: 10px;
+  top: 80px;
  
   
 }
 
-
-.active {
-  padding:5px 10px;
-  border: 2px solid gray;
-  background-color: white;
-  opacity: .7;
-  border-radius: 10px;
-  text-decoration: none;
-  transform: scale(1.2);
-  
+.left {
+  display: inline-block;
+  position: absolute;
+  left: 10px;
+  top: 80px;
   
 
 }
 
+
+.active {
+    
+    border-bottom: 2px solid white;
+    border-radius:5px;
+
+    
+
+}
+
+.infoApi {
+  background: darkgray;
+  opacity: .8;
+  display: inline-block;
+  margin: 20px;
+  width: 420px;
+  padding: 5px;
+  box-shadow: 5px 5px 10px lightgray;
+  z-index: -1;
+  
+
+
+  h1 {
+    font-size: 3rem;
+    color: white;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+    color: white;
+  }
+
+  .weatherInfo {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+
+    p {
+      color: white;
+    }
+
+    span {
+      color: gold;
+      font-size: 1.4rem;
+    }
+  }
+}
+
+
+
+.cycles {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  ;
+  opacity: .8;
+  width: 480px;
+  margin: auto;
+  z-index: -1;
+  border-radius: 10px;
+
+  .eachCycle {
+    border: 1px solid gold;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: darkgray;
+    margin: auto 10px;
+
+    &:hover {
+      background-color: black;
+
+      .p2 {
+        color: white;
+      }
+    }
+
+    .p1 {
+      color: gold;
+      font-size: 1.2rem;
+    }
+
+  }
+}
